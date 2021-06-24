@@ -13,12 +13,18 @@ export const DisRes = styled.section`
   width: 200px;
   text-align: right;
   padding-top: 35px;
-  font-size: 60px;
+  font-size: 50px;
   margin-top: -25px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
 `
 
 export const DisFunc = styled.section`
   height: 30px;
   width: 200px;
   text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
 `

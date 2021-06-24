@@ -1,6 +1,6 @@
 import React from "react"
-import Display from "../../components/Buttons"
-import Buttons from "../../components/Display"
+import Display from "../../components/Display"
+import Buttons from "../../components/Buttons"
 import { CalcBoard } from "./styles"
 
 
@@ -9,19 +9,31 @@ class Main extends React.Component{
     super(props)
 
     this.state = {
-      data: []
+      data: [],
+      char: "",
+      results: "",
+      toogle: true
     }
 
   }
 
-
-
+  
   render() {
     return(
       <>
-        <CalcBoard>
-          <Buttons></Buttons>
-          <Display></Display>
+        <CalcBoard color = { this.state.toogle }>
+          <Display 
+          char={this.state.char} 
+          results={this.state.results}
+          ></Display>
+          <Buttons 
+          char={this.state.char} 
+          results={this.state.results} 
+          toogle={this.state.toogle} 
+          setChar={(v)=>this.setState({...this.state, char: v})} 
+          setResults={(r)=>this.setState({results: r})}
+          setToogle={(t)=>this.setState({toogle: t})}
+          ></Buttons>
         </CalcBoard>
       </>
     )

@@ -1,23 +1,19 @@
 import React from 'react'
 import { DisBoard, DisRes, DisFunc } from "./styles"
 
-class Display extends React.Component{
-  constructor(props){
-    super(props)
+const Display = ({ char, results }) => {
 
-    this.state = {
-      val: []
-    }
-  }
 
-  render(){
-    return(    
+  return(    
     <DisBoard>
-      <DisRes>oi</DisRes>
-      <DisFunc>oi</DisFunc>
+      <DisRes>
+        { results }
+      </DisRes>
+      <DisFunc>
+        { char }
+      </DisFunc>
     </DisBoard>
-    )
-  }
+  )
 }
 
 export default Display

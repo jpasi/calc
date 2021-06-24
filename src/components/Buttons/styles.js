@@ -9,7 +9,7 @@ export const Btns = styled.form`
 `
 
 export const BtnN = styled.button`
-  background-color:#004080;
+  background-color: ${(props) => (props.color === true) ? "#FF966B" : "#004080"};
   height: 50px;
   width: 50px;
   list-style: none;
