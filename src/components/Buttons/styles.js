@@ -9,7 +9,7 @@ export const Btns = styled.form`
 `
 
 export const BtnN = styled.button`
-  background-color: ${(props) => (props.color === true) ? "#FF966B" : "#004080"};
+  background-color: ${(props) => (props.toogle === true) ? "#FF966B" : "#004080"};
   height: 50px;
   width: 50px;
   list-style: none;
@@ -33,3 +33,43 @@ export const Btn = styled.button`
   border: none;
   cursor: pointer;
 `
+
+export const Tgm = styled.div`
+background-color: ${(props) => (props.toogle === true) ? "#FF966B" : "#004080"};
+height: 50px;
+width: 50px;
+list-style: none;
+border-radius: 50px;
+text-align: center;
+padding: 15px;
+border: none;
+cursor: pointer;
+display: ${(props) => (props.toogle === true) ? "none" : "block"};
+svg{
+  fill: var(--background);
+  height: 30px;
+  width: 30px;
+  z-index: 0;
+  margin: -5px;
+}
+`
+export const Tgs = styled.div`
+background-color: ${(props) => (props.toogle === true) ? "#FF966B" : "#004080"};
+height: 50px;
+width: 50px;
+list-style: none;
+border-radius: 50px;
+text-align: center;
+padding: 15px;
+border: none;
+cursor: pointer;
+display: ${(props) => (props.toogle === true) ? "block" : "none"};
+svg{
+  fill: var(--background);
+  height: 30px;
+  width: 30px;
+  z-index: 0;
+  margin: -5px;
+}
+`
+

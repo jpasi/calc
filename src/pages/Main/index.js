@@ -21,7 +21,7 @@ class Main extends React.Component{
   render() {
     return(
       <>
-        <CalcBoard color = { this.state.toogle }>
+        <CalcBoard toogle = { this.state.toogle }>
           <Display 
           char={this.state.char} 
           results={this.state.results}

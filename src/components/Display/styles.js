@@ -18,6 +18,7 @@ export const DisRes = styled.section`
   overflow: hidden;
   white-space: nowrap;
   display: block;
+  color: #fff;
 `
 
 export const DisFunc = styled.section`
@@ -27,4 +28,5 @@ export const DisFunc = styled.section`
   overflow: hidden;
   white-space: nowrap;
   display: block;
+  color: #fff;
 `
